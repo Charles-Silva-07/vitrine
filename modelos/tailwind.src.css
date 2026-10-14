@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.caixa { appearance: none; width: 1.75rem; height: 1.75rem; border: 2px solid #1b3b7a; border-radius: 4px; background: #fff; display: grid; place-content: center; flex-shrink: 0; cursor: pointer; transition: background-color .2s ease; }
+.caixa::after { content: ""; width: .85rem; height: .45rem; border-left: 3px solid #fff; border-bottom: 3px solid #fff; transform: rotate(-45deg) translate(1px, -1px); opacity: 0; }
+.caixa:checked { background: #1b3b7a; }
+.caixa:checked::after { opacity: 1; }
+.caixa:disabled { opacity: .6; cursor: default; }
+
+.btn-zap { position: relative; overflow: hidden; color: #fff; text-shadow: 0 1px 1px rgba(0,0,0,.28); border: 1px solid rgba(255,255,255,.3); background-image: linear-gradient(180deg, #0f8455 0%, #0e7a4f 50%, #0a6340 100%); box-shadow: 0 1px 0 rgba(255,255,255,.35) inset, 0 -3px 0 rgba(0,0,0,.16) inset, 0 10px 26px -6px rgba(24,160,105,.75), 0 0 26px -2px rgba(31,170,110,.4), 0 2px 5px rgba(0,0,0,.25); transition: transform .25s ease, box-shadow .25s ease, filter .25s ease; }
+.btn-zap::after { content: ""; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(115deg, transparent 35%, rgba(255,255,255,.32) 50%, transparent 65%); transform: translateX(-120%); transition: transform .7s ease; }
+.btn-zap:hover, .btn-zap:focus-visible { transform: translateY(-2px); filter: brightness(1.06); box-shadow: 0 1px 0 rgba(255,255,255,.4) inset, 0 -3px 0 rgba(0,0,0,.16) inset, 0 16px 34px -6px rgba(40,190,125,.9), 0 0 34px 0 rgba(40,190,125,.5), 0 3px 8px rgba(0,0,0,.3); }
+.btn-zap:hover::after, .btn-zap:focus-visible::after { transform: translateX(120%); }
+.btn-zap:active { transform: translateY(0) scale(.98); filter: brightness(.97); }
+
+.ico-zap { display: grid; place-items: center; width: 2.5rem; height: 2.5rem; border-radius: 9999px; background: rgba(255,255,255,.18); box-shadow: 0 0 0 1px rgba(255,255,255,.25) inset; transition: transform .3s ease; }
+.btn-zap:hover .ico-zap { transform: rotate(-10deg) scale(1.1); }
+
+.btn-zap-pulsa { animation: zap-halo 1.8s ease-out 1.4s 2; }
+.btn-zap-pulsa::after { animation: zap-brilho 1.3s ease-out 1.4s 1; }
+.btn-zap-entra { animation: zap-halo 1.8s ease-out 2; }
+.btn-zap-entra::after { animation: zap-brilho 1.3s ease-out 1; }
+@keyframes zap-halo {
+  0% { box-shadow: 0 1px 0 rgba(255,255,255,.35) inset, 0 -3px 0 rgba(0,0,0,.16) inset, 0 10px 26px -6px rgba(24,160,105,.75), 0 0 26px -2px rgba(31,170,110,.4), 0 2px 5px rgba(0,0,0,.25), 0 0 0 0 rgba(31,170,110,.65); }
+  100% { box-shadow: 0 1px 0 rgba(255,255,255,.35) inset, 0 -3px 0 rgba(0,0,0,.16) inset, 0 10px 26px -6px rgba(24,160,105,.75), 0 0 26px -2px rgba(31,170,110,.4), 0 2px 5px rgba(0,0,0,.25), 0 0 0 16px rgba(31,170,110,0); }
+}
+@keyframes zap-brilho { from { transform: translateX(-120%); } to { transform: translateX(120%); } }
+
+@media (prefers-reduced-motion: reduce) {
+  .btn-zap, .btn-zap::after, .ico-zap { transition: none; }
+  .btn-zap-pulsa, .btn-zap-pulsa::after, .btn-zap-entra, .btn-zap-entra::after { animation: none; }
+  .btn-zap:hover, .btn-zap:focus-visible, .btn-zap:active { transform: none; }
+  .btn-zap:hover::after, .btn-zap:focus-visible::after { transform: translateX(-120%); }
+  .btn-zap:hover .ico-zap { transform: none; }
+}

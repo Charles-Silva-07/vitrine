@@ -1,0 +1,7 @@
+{
+  "name": "vitrine",
+  "private": true,
+  "scripts": {
+    "css:previdenciario": "npx -y tailwindcss@3.4.17 -c modelos/tailwind.config.js -i modelos/tailwind.src.css -o modelos/previdenciario.css --minify"
+  }
+}
