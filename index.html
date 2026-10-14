@@ -6,23 +6,16 @@
   <title>Landing Pages para Advogados | Páginas de Alta Conversão Pensadas para a OAB</title>
   <meta name="description" content="Landing pages rápidas, focadas em uma área do Direito e elaboradas com atenção ao Provimento 205/2021 da OAB. Pare de pagar por cliques que não viram contatos.">
   <meta name="theme-color" content="#020617">
-  <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: { gold: { 300: '#dcc491', 400: '#cfb078', 500: '#c0a062', 600: '#a8884d' } },
-          fontFamily: {
-            serif: ['"Playfair Display"', 'Georgia', 'serif'],
-            sans: ['Inter', 'system-ui', 'sans-serif']
-          }
-        }
-      }
-    }
-  </script>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap"></noscript>
+  <link rel="stylesheet" href="vitrine.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 64 64%27%3E%3Crect width=%2764%27 height=%2764%27 rx=%2710%27 fill=%27%23020617%27/%3E%3Crect y=%2754%27 width=%2764%27 height=%2710%27 fill=%27%23c0a062%27/%3E%3Ctext x=%2732%27 y=%2741%27 font-family=%27Georgia,serif%27 font-size=%2734%27 font-weight=%27bold%27 text-anchor=%27middle%27 fill=%27white%27%3EL%3C/text%3E%3C/svg%3E">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="Landing Pages para Advogados | Páginas de Alta Conversão Pensadas para a OAB">
+  <meta property="og:description" content="Landing pages rápidas, focadas em uma área do Direito e elaboradas com atenção ao Provimento 205/2021 da OAB.">
   <style>
     html { scroll-padding-top: 5rem; }
     :focus-visible { outline: 2px solid #cfb078; outline-offset: 3px; }
@@ -89,7 +82,7 @@
         <a href="#estrutura" class="menu-link py-3 border-b border-slate-800">Estrutura</a>
         <a href="#portfolio" class="menu-link py-3 border-b border-slate-800">Modelos</a>
         <a href="#faq" class="menu-link py-3 border-b border-slate-800">FAQ</a>
-        <a href="#contato" class="menu-link mt-4 text-center bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-3 rounded-md transition duration-300">Falar no WhatsApp</a>
+        <a href="#contato" class="menu-link mt-4 text-center bg-emerald-700 hover:bg-emerald-800 text-white font-semibold py-3 rounded-md transition duration-300">Falar no WhatsApp</a>
       </nav>
     </div>
   </header>
@@ -110,7 +103,7 @@
           <div class="mt-10 flex flex-col sm:flex-row sm:flex-wrap gap-4">
             <a href="https://wa.me/5500000000000?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20quero%20saber%20mais%20sobre%20a%20landing%20page%20para%20meu%20escrit%C3%B3rio."
                target="_blank" rel="noopener"
-               class="inline-flex items-center justify-center gap-3 sm:whitespace-nowrap bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-8 py-4 rounded-md shadow-md transition duration-300 ease-in-out transform hover:-translate-y-0.5 hover:shadow-lg hover:shadow-emerald-900/40">
+               class="inline-flex items-center justify-center gap-3 sm:whitespace-nowrap bg-emerald-700 hover:bg-emerald-800 text-white font-semibold px-8 py-4 rounded-md shadow-md transition duration-300 ease-in-out transform hover:-translate-y-0.5 hover:shadow-lg hover:shadow-emerald-900/40">
               <svg class="w-5 h-5" aria-hidden="true"><use href="#ico-whats"/></svg>
               Quero uma página para o meu escritório
             </a>
@@ -205,7 +198,7 @@
             <li class="flex gap-3"><span class="text-gold-400 mt-0.5" aria-hidden="true">&#10003;</span><span>Sem linguagem sensacionalista ou que explore o sofrimento do cliente.</span></li>
             <li class="flex gap-3"><span class="text-gold-400 mt-0.5" aria-hidden="true">&#10003;</span><span>Identificação profissional correta, com nome e número de inscrição na OAB.</span></li>
           </ul>
-          <p class="mt-8 pt-6 border-t border-slate-800 text-xs text-slate-500 leading-relaxed">
+          <p class="mt-8 pt-6 border-t border-slate-800 text-xs text-slate-400 leading-relaxed">
             A responsabilidade final pela publicidade é do advogado inscrito. Recomendamos a conferência do material com o regulamento da sua Seccional antes da publicação.
           </p>
         </div>
@@ -251,12 +244,12 @@
         <div class="grid md:grid-cols-3 gap-8 mt-14">
           <article class="bg-slate-900 border border-slate-800 rounded-sm overflow-hidden group">
             <div class="h-56 bg-slate-800 overflow-hidden">
-              <img src="https://images.unsplash.com/photo-1447069387593-a5de0862481e?auto=format&fit=crop&w=800&q=70" alt="Cartas antigas amarradas com barbante e caneta-tinteiro" loading="lazy" onerror="this.style.display='none'" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition duration-500">
+              <img src="modelos/previdenciario-capa.jpg" alt="Prévia da página do modelo previdenciário: título, botão de WhatsApp e extrato de contribuições" width="800" height="500" loading="lazy" decoding="async" onerror="this.style.display='none'" class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-500">
             </div>
             <div class="p-6 border-t border-slate-800">
               <p class="text-sm text-gold-400 mb-2">Modelo 01</p>
               <h3 class="font-serif text-xl text-slate-100 mb-2">Direito Previdenciário</h3>
-              <p class="text-sm leading-relaxed">Página sobre aposentadorias e benefícios do INSS, com tema claro, letras grandes e botões amplos para o público 50+.</p>
+              <p class="text-sm leading-relaxed">Página sobre aposentadorias e benefícios do INSS, com letras grandes, botões amplos e leitura confortável para o público 50+.</p>
               <a href="modelos/previdenciario.html" target="_blank" rel="noopener" class="inline-flex items-center gap-2 mt-5 text-sm font-semibold text-gold-400 border border-gold-500 px-4 py-2 rounded-md transition duration-300 ease-in-out transform hover:-translate-y-0.5 hover:shadow-lg hover:bg-gold-500 hover:text-slate-950">Ver modelo completo</a>
             </div>
           </article>
@@ -268,7 +261,7 @@
               <p class="text-sm text-gold-400 mb-2">Modelo 02</p>
               <h3 class="font-serif text-xl text-slate-100 mb-2">Direito de Família</h3>
               <p class="text-sm leading-relaxed">Tom acolhedor e discreto para temas sensíveis, com foco em sigilo e atendimento humanizado.</p>
-              <span class="inline-block mt-5 text-sm text-slate-500 border border-slate-800 px-4 py-2 rounded-md">Em breve</span>
+              <span class="inline-block mt-5 text-sm text-slate-400 border border-slate-800 px-4 py-2 rounded-md">Em breve</span>
             </div>
           </article>
           <article class="bg-slate-900 border border-slate-800 rounded-sm overflow-hidden group">
@@ -279,11 +272,11 @@
               <p class="text-sm text-gold-400 mb-2">Modelo 03</p>
               <h3 class="font-serif text-xl text-slate-100 mb-2">Direito Empresarial</h3>
               <p class="text-sm leading-relaxed">Visual corporativo e objetivo, pensado para decisores que valorizam clareza e agilidade.</p>
-              <span class="inline-block mt-5 text-sm text-slate-500 border border-slate-800 px-4 py-2 rounded-md">Em breve</span>
+              <span class="inline-block mt-5 text-sm text-slate-400 border border-slate-800 px-4 py-2 rounded-md">Em breve</span>
             </div>
           </article>
         </div>
-        <p class="mt-8 text-xs text-slate-500">* Modelos ilustrativos. Imagens: Unsplash.</p>
+        <p class="mt-8 text-xs text-slate-400">* Modelos ilustrativos. Imagens: Unsplash.</p>
       </div>
     </section>
 
@@ -339,7 +332,7 @@
         <p class="mt-6 text-lg max-w-[60ch]">Conte-nos sobre a sua área de atuação. Respondemos pelo WhatsApp, sem compromisso.</p>
         <a href="https://wa.me/5500000000000?text=Ol%C3%A1!%20Quero%20conversar%20sobre%20uma%20landing%20page%20para%20meu%20escrit%C3%B3rio."
            target="_blank" rel="noopener"
-           class="inline-flex items-center gap-3 mt-10 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-10 py-4 rounded-md shadow-md transition duration-300 ease-in-out transform hover:-translate-y-0.5 hover:shadow-lg hover:shadow-emerald-900/40">
+           class="inline-flex items-center gap-3 mt-10 bg-emerald-700 hover:bg-emerald-800 text-white font-semibold px-10 py-4 rounded-md shadow-md transition duration-300 ease-in-out transform hover:-translate-y-0.5 hover:shadow-lg hover:shadow-emerald-900/40">
           <svg class="w-5 h-5" aria-hidden="true"><use href="#ico-whats"/></svg>
           Falar agora pelo WhatsApp
         </a>
@@ -348,7 +341,7 @@
   </main>
 
   <!-- Rodapé -->
-  <footer class="bg-slate-950 border-t border-slate-800 text-slate-500 text-sm">
+  <footer class="bg-slate-950 border-t border-slate-800 text-slate-400 text-sm">
     <div class="max-w-6xl mx-auto px-6 py-10 flex flex-col md:flex-row gap-6 justify-between">
       <div>
         <p class="font-serif text-slate-100 text-lg">Sua Marca<span class="text-gold-400">.</span></p>
@@ -356,7 +349,7 @@
       </div>
       <div class="md:text-right max-w-md">
         <p>&copy; <span id="ano">2026</span> Sua Marca. Todos os direitos reservados.</p>
-        <p class="mt-2 text-xs text-slate-600">Prestamos serviços de design e desenvolvimento web. Não prestamos serviços jurídicos nem substituímos a análise do advogado sobre a conformidade de sua publicidade com o Código de Ética e Disciplina da OAB e o Provimento 205/2021.</p>
+        <p class="mt-2 text-xs text-slate-400">Prestamos serviços de design e desenvolvimento web. Não prestamos serviços jurídicos nem substituímos a análise do advogado sobre a conformidade de sua publicidade com o Código de Ética e Disciplina da OAB e o Provimento 205/2021.</p>
       </div>
     </div>
   </footer>
@@ -364,7 +357,7 @@
   <!-- WhatsApp flutuante -->
   <a id="whats-float" href="https://wa.me/5500000000000?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es."
      target="_blank" rel="noopener" aria-label="Falar pelo WhatsApp"
-     class="fixed bottom-5 right-5 z-50 w-14 h-14 rounded-full bg-emerald-600 hover:bg-emerald-700 text-white flex items-center justify-center shadow-xl shadow-black/50 transition duration-300 ease-in-out transform hover:-translate-y-0.5 hover:shadow-lg">
+     class="fixed bottom-5 right-5 z-50 w-14 h-14 rounded-full bg-emerald-700 hover:bg-emerald-800 text-white flex items-center justify-center shadow-xl shadow-black/50 transition duration-300 ease-in-out transform hover:-translate-y-0.5 hover:shadow-lg">
     <svg class="w-8 h-8" aria-hidden="true"><use href="#ico-whats"/></svg>
   </a>
 

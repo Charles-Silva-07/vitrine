@@ -2,6 +2,8 @@
   "name": "vitrine",
   "private": true,
   "scripts": {
+    "css": "npm run css:vitrine && npm run css:previdenciario",
+    "css:vitrine": "npx -y tailwindcss@3.4.17 -c vitrine.config.js -i vitrine.src.css -o vitrine.css --minify",
     "css:previdenciario": "npx -y tailwindcss@3.4.17 -c modelos/tailwind.config.js -i modelos/tailwind.src.css -o modelos/previdenciario.css --minify"
   }
 }
